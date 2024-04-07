@@ -1,5 +1,7 @@
-How To Install the Django Web Framework on Ubuntu 22.04
-Published on May 12, 2022
+**Django Test Projects**
+
+****How To Install the Django Web Framework on Ubuntu 22.04**
+Published on April 4, 2024
 Django
 Python Frameworks
 Ubuntu 22.04
@@ -8,7 +10,7 @@ Ubuntu
 Default avatar
 By Brian Boucheron and Jamon Camisso
 
-How To Install the Django Web Framework on Ubuntu 22.04
+**How To Install the Django Web Framework on Ubuntu 22.04**
 Not using Ubuntu 22.04?
 Choose a different version or distribution.
 Ubuntu 22.04
@@ -17,7 +19,8 @@ Django is a full-featured Python web framework for developing dynamic websites a
 
 In this guide, you will get Django up and running on an Ubuntu 22.04 server. After installation, you will start a new project to use as the basis for your site.
 
-Different Methods
+**Different Methods**
+
 There are different ways to install Django, depending upon your needs and how you want to configure your development environment. These have different advantages and one method may lend itself better to your specific situation than others.
 
 Some of the different methods include:
@@ -242,3 +245,11 @@ Conclusion
 You should now have Django installed on your Ubuntu 22.04 server, providing the main tools you need to create powerful web applications. You should also know how to start a new project and launch the developer server. Leveraging a complete web framework like Django can help make development faster, allowing you to concentrate only on the unique aspects of your applications.
 
 If you would like more information about working with Django, including in-depth discussions of things like models and views, please see our Django development series.
+
+Django-Process
+#create a directory and cd to it #create a virtual env -python3 -m venv myenv #activate the virtual env - source myenv/bin/activate then cd to it #install django inside your venv - pip install django #start the project using - django-admin startproject myproject #run server - python manage.py runserver #create an app -django-admin startapp myapp and cd to the app #navigate to settings under apps ,add your app #go to views.py and import http and define it; from django.shortcuts import render from django.http import HttpResponse
+
+Create your views here.
+def hello(request): return HttpResponse('Hello world! Welcome to my first Django Website')
+
+#navigate to your app and create a urls.py file and import path and views #go to urls.py in your project and and copy the path of your app
