@@ -9,3 +9,4 @@ def hello(request):
     return HttpResponse("Hello, World this is my first django project!")
 def contact(request):
     return HttpResponse("Contact page")
+
